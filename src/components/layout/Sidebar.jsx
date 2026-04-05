@@ -1,5 +1,4 @@
 import React from 'react';
-import useStore from '../../store/useStore';
 import styles from './Sidebar.module.css';
 
 const NAV = [
@@ -9,7 +8,7 @@ const NAV = [
 ];
 
 export default function Sidebar({ activePage, setActivePage }) {
-  const {  } = useStore();
+
 
   return (
     <aside className={styles.sidebar}>
