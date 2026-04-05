@@ -1,0 +1,65 @@
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-right: 0.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo {
+  padding: 0 1.25rem 1.75rem;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+}
+.logo span { color: var(--text); }
+
+.nav { display: flex; flex-direction: column; gap: 2px; }
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.65rem 1.25rem;
+  font-size: 13.5px;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-left: 2px solid transparent;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+.navItem:hover { color: var(--text); background: rgba(255,255,255,0.03); }
+.navItem.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: rgba(167,139,250,0.08);
+}
+
+.icon { font-size: 16px; width: 20px; text-align: center; }
+.label { font-size: 13.5px; }
+
+.bottom { margin-top: auto; padding: 1.25rem; }
+.roleLabel {
+  font-size: 10px;
+  color: var(--faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.roleSelect { width: 100%; background: var(--surface2); }
+
+@media (max-width: 768px) {
+  .sidebar { width: 60px; }
+  .logo, .label, .bottom { display: none; }
+  .icon { margin: 0 auto; }
+  .navItem { justify-content: center; padding: 0.75rem; }
+}

@@ -1,0 +1,38 @@
+.wrapper { display: flex; flex-direction: column; gap: 14px; }
+
+.insightsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.insightCard {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.icon { font-size: 16px; display: block; margin-bottom: 10px; }
+.insLabel { font-size: 10.5px; color: var(--faint); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 5px; }
+.insValue { font-size: 22px; font-weight: 500; letter-spacing: -0.5px; margin-bottom: 5px; }
+.insDesc { font-size: 12px; color: var(--faint); line-height: 1.5; }
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.chartCard {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.chartTitle { font-size: 12.5px; color: var(--muted); margin-bottom: 1rem; font-weight: 500; }
+
+@media (max-width: 768px) {
+  .chartsRow { grid-template-columns: 1fr; }
+}

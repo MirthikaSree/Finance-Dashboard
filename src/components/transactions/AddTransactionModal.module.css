@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal {
+  background: var(--surface);
+  border: 0.5px solid var(--border2);
+  border-radius: 16px;
+  padding: 1.75rem;
+  width: 420px;
+  max-width: 100%;
+}
+
+.heading { font-size: 16px; font-weight: 500; margin-bottom: 1.25rem; }
+
+.row { margin-bottom: 1rem; }
+.label { display: block; font-size: 11.5px; color: var(--faint); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+.input { width: 100%; background: var(--bg); }
+
+.twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.error { font-size: 12px; color: var(--red); margin-bottom: 0.75rem; }
+
+.actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 1.25rem; }
+
+.cancel {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: transparent;
+  border: 0.5px solid var(--border2);
+  color: var(--muted);
+  font-size: 13px;
+}
+.cancel:hover { color: var(--text); }
+
+.submit {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #0f1117;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.submit:hover { opacity: 0.88; }
