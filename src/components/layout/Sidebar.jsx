@@ -9,7 +9,7 @@ const NAV = [
 ];
 
 export default function Sidebar({ activePage, setActivePage }) {
-  const { role, setRole } = useStore();
+  const {  } = useStore();
 
   return (
     <aside className={styles.sidebar}>

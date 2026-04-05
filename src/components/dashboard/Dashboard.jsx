@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   LineChart, Line, BarChart, Bar, PieChart, Pie, Cell,
-  XAxis, YAxis, Tooltip, ResponsiveContainer, Legend,
+  XAxis, YAxis, Tooltip, ResponsiveContainer, 
 } from 'recharts';
 import useStore from '../../store/useStore';
 import SummaryCard from './SummaryCard';
